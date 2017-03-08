@@ -9,6 +9,18 @@
 </p>
  
 
+![SG90 Servo Motor](https://raw.githubusercontent.com/uraimo/SG90Servo.swift/master/sg90.jpg)
+
+# Summary
+
+This simple library can control an SG90 servo motor with a PWM, that has a 20ms period and duty cycle that represent these positions:
+
+* 1ms = 5%: _-90°, left position_
+* 1.5ms = 7.5%: _-90°, middle position_
+* 2ms = 10%: _+90°, right position_
+
+Your servo could have slightly different settings (1-2% difference), play around with the values in the `Position` enum (expressed in percentage) to find the right duty cycles for your servo.
+
 ## Supported Boards
 
 Every board supported by [SwiftyGPIO](https://github.com/uraimo/SwiftyGPIO): RaspberryPis, BeagleBones, C.H.I.P., etc...
@@ -19,15 +31,7 @@ The example below will use a RaspberryPi 2 board but you can easily modify the e
 
 ## Usage
 
-This simple library is configured to drive a SG90 servo with a 20ms period and duty cycle that represent these positions:
-
-* 1ms = 5%: _-90°, left position_
-* 1.5ms = 7.5%: _-90°, middle position_
-* 2ms = 10%: _+90°, right position_
-
-But your servo could have slightly different settings (1-2% difference), play around with the values in the `Position` enum (expressed in percentage) to find the right duty cycles for your servo.
-
-So, the first thing we need to do is choose a `PWMOutput` using SwiftyGPIO and use it to initialize the `SG90Servo` object:
+The first thing we need to do is to obtain an instance of `PWMOutput` from SwiftyGPIO and use it to initialize the `SG90Servo` object:
 
 ```swift
 import SwiftyGPIO
