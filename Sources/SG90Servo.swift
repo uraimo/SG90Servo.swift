@@ -5,15 +5,15 @@ import Glibc
 public class SG90Servo{
     var pwm: PWMOutput
 
-    public init(_ pwm:PWMOutput, period: Int = SERVO_PERIOD_NS)
+    public init(_ pwm:PWMOutput, period: Int = SERVO_PERIOD_NS) {
         self.pwm = pwm
     }
 
-    public enable()
+    public enable() {
         pwm.initPWM()
     }
 
-    public disable(){
+    public disable() {
         pwm.stopPWM()
     }
 
