@@ -25,7 +25,7 @@ public class SG90Servo{
 public enum Position: Int {
     case left = 5
     case middle = 8
-    case right = 10
+    case right = 12
 }
 
 let SERVO_PERIOD_NS = 20_000_000  //20ms
