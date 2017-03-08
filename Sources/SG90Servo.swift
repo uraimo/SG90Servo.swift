@@ -9,15 +9,15 @@ public class SG90Servo{
         self.pwm = pwm
     }
 
-    public enable() {
+    public func enable() {
         pwm.initPWM()
     }
 
-    public disable() {
+    public func disable() {
         pwm.stopPWM()
     }
 
-    public move(to: Position) {
+    public func move(to: Position) {
         pwm.startPWM(period: SERVO_PERIOD_NS, duty: to.rawValue)
     }
 }
