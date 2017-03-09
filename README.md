@@ -1,6 +1,6 @@
 # SG90Servo.swift
 
-*A Swift library for the SG90 servo motor, that can be adapted for other servos.*
+*A Swift library for the SG90 servo motor, that can be adapted to work with other servos (9g ES08A, SM-S4303R, S3003, ...).*
 
 <p>
 <img src="https://img.shields.io/badge/os-linux-green.svg?style=flat" alt="Linux-only" />
