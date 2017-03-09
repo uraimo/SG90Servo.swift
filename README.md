@@ -23,11 +23,9 @@ Your servo could have slightly different settings (1-2% difference), play around
 
 ## Supported Boards
 
-Every board supported by [SwiftyGPIO](https://github.com/uraimo/SwiftyGPIO): RaspberryPis, BeagleBones, C.H.I.P., etc...
+Every board supported by [SwiftyGPIO](https://github.com/uraimo/SwiftyGPIO) with the PWM feature, right now only RaspberryPis. And you'll need Swift 3.x, check out the SwiftyGPIO readme for more info on where to find it.
 
-To use this library, you'll need a Linux ARM board with Swift 3.x.
-
-The example below will use a RaspberryPi 2 board but you can easily modify the example to use one the the other supported boards, a full working demo projects for the RaspberryPi2 is available in the `Examples` directory.
+The example below uses a RaspberryPi 2 board but you can easily modify the example to use one the the other supported boards, a full working demo projects for the RaspberryPi2 is available in the `Examples` directory.
 
 ## Usage
 
