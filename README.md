@@ -57,6 +57,7 @@ Please refer to the [SwiftyGPIO](https://github.com/uraimo/SwiftyGPIO) readme fo
 
 Once your board runs Swift, if your version support the Swift Package Manager, you can simply add this library as a dependency of your project and compile with `swift build`:
 
+```
   let package = Package(
       name: "MyProject",
       dependencies: [
@@ -65,6 +66,7 @@ Once your board runs Swift, if your version support the Swift Package Manager, y
       ]
       ...
   ) 
+```
 
 The directory `Examples` contains sample projects that uses SPM, compile it and run the sample with `sudo ./.build/debug/TestServo`.
 
