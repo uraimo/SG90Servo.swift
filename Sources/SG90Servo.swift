@@ -1,5 +1,5 @@
 /*
-   MCP3008.swift
+   SG90Servo.swift
 
    Copyright (c) 2017 Umberto Raimondi
    Licensed under the MIT license, as follows:
