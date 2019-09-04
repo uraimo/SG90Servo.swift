@@ -8,6 +8,6 @@ let package = Package(
         .package(url: "https://github.com/uraimo/SG90Servo.swift.git",from: "3.0.0")
     ],
     targets: [
-        .target(name: "TestServo", dependencies: ["SwiftyGPIO","SG90Servo.swift"]),
+        .target(name: "TestServo", dependencies: ["SwiftyGPIO","SG90Servo"]),
     ]
 ) 
