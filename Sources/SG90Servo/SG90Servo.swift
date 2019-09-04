@@ -28,9 +28,11 @@ import SwiftyGPIO  //Comment this when not using the package manager
  
 public class SG90Servo{
     var pwm: PWMOutput
+    var period: Int
 
-    public init(_ pwm:PWMOutput, period: Int = SERVO_PERIOD_NS) {
+    public init(_ pwm:PWMOutput, period: Int = 20_000_000) { //Default period 20ms
         self.pwm = pwm
+        self.period = period
     }
 
     public func enable() {
@@ -42,8 +44,9 @@ public class SG90Servo{
     }
 
     public func move(to: Position) {
-        pwm.startPWM(period: SERVO_PERIOD_NS, duty: Float(to.rawValue))
+        pwm.startPWM(period: period, duty: Float(to.rawValue))
     }
+
 }
 
 public enum Position: Int {
@@ -52,4 +55,3 @@ public enum Position: Int {
     case right = 12
 }
 
-let SERVO_PERIOD_NS = 20_000_000  //20ms
